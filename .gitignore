@@ -9,3 +9,6 @@ docs/.vitepress/cache/
 .DS_Store
 *.local
 *.log
+
+# Local tooling (skills, commands, agents)
+.codebuddy/
