@@ -2,7 +2,7 @@
 
 > DeepSeek Harness（DSH）是 DeepSeek 于 2026 年 8 月 13 日开源的 Agent 运行环境，官方定义一句话：「Model + Harness = Agent」。它既不做模型、也不做聊天界面，而是把工具调用、会话管理、沙箱、存储和 Agent 循环组织成一套可拆装的系统，核心设计是「一切皆插件」。适用对象是想自己组装、替换 Agent 运行组件的开发者；不适合想要开箱即用完整产品的用户。
 
-一句话区分：模型决定 Agent「能做什么」，Harness 决定 Agent「如何把事情做完」。
+一句话区分：模型决定 Agent「能做什么」，Harness 决定 Agent「如何把事情做完」。相关概念见 [Agent 技术](./agents)。
 
 ## DeepSeek Harness 不是 Claude Code
 
@@ -30,7 +30,7 @@ Claude Code 的模型、工具和调度策略由 Anthropic 决定，构成商业
 
 ## 一切皆插件：Cordis 架构
 
-传统 Harness 像一栋浇筑好的大楼：核心结构厂商定死，用户只能在外部加 Skill 或接 MCP。DSH 把这栋大楼拆成一盒乐高——不只外围能力插件化，连 Model Adapter、Tool Registry、Session Log 甚至 Agent Loop 都是插件。目标是 Self-Evolving Agent Harness：Agent 能在运行中检查、挂载、修改自己的 Runtime。
+传统 Harness 像一栋浇筑好的大楼：核心结构厂商定死，用户只能在外部加 Skill 或接 MCP（见 [Agent 技术](./agents) 的协议条目）。DSH 把这栋大楼拆成一盒乐高——不只外围能力插件化，连 Model Adapter、Tool Registry、Session Log 甚至 Agent Loop 都是插件。目标是 Self-Evolving Agent Harness：Agent 能在运行中检查、挂载、修改自己的 Runtime。
 
 支撑这套架构的是 Cordis 框架，来自 DeepSeek 与北京大学联合论文《A Programming Paradigm for Spatiotemporal Composability》。Cordis 已在 Koishi 聊天机器人框架中运行四年，4000+ 社区插件生产环境验证。它解决两个问题：
 
@@ -79,7 +79,7 @@ DSH 把 Agent 执行过程记录成一份只增不改的会话日志：系统提
 ## 动手前自检
 
 1. 环境：装 Node.js，按官方 README 安装 `dsh` 命令行。
-2. 配置：启动 dsh，在 Web 界面填 API Key、选模型（默认 DeepSeek V4 Pro，可换 Anthropic、OpenAI、Kimi）。
+2. 配置：启动 dsh，在 Web 界面填 API Key、选模型（默认 DeepSeek V4 Pro，可换 Anthropic、OpenAI、Kimi）。模型选型参考 [大模型进展](./models)。
 3. 验证：选一个本地工作区，跑「改一行代码并跑测试」这样的小任务，确认文件读写和命令执行权限符合预期。
 4. 复盘：打开 Trajectory 视图，看工具调用、耗时和 Token 消耗，对比 PTC 模式与非 PTC 模式的成本差异。
 5. 扩展：从社区精选列表挑插件安装。装之前确认来源，第三方插件默认有 Shell 权限。
