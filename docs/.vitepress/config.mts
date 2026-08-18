@@ -17,6 +17,10 @@ export default defineConfig({
       { text: '资源导航', link: '/05-resources/' },
     ],
 
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/marvin9551/AISeeker' },
+    ],
+
     sidebar: {
       '/01-ai-frontier/': [
         {
@@ -101,9 +105,8 @@ export default defineConfig({
       },
     },
 
-    // TODO: 建好 GitHub 仓库后，把 your-name 换成你的用户名
     editLink: {
-      pattern: 'https://github.com/your-name/AISeeker/edit/main/docs/:path',
+      pattern: 'https://github.com/marvin9551/AISeeker/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
 
@@ -122,8 +125,8 @@ export default defineConfig({
     },
 
     footer: {
-      message: '基于 MIT License 开源',
-      copyright: 'Copyright 2026 AISeeker contributors',
+      message: '免费开放，坚决不做知识付费 · 内容由社区共创 · <a href="https://github.com/marvin9551/AISeeker">GitHub</a>',
+      copyright: 'Copyright 2026 AISeeker contributors · MIT License',
     },
 
     notFound: {

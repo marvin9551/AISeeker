@@ -23,3 +23,15 @@ features:
   - title: 使用指南
     details: 面向非技术用户，手把手掌握提示词、ChatGPT、Claude 等主流 AI 工具。
 ---
+
+## 免费 · 开放 · 共创
+
+AISeeker 是**免费开放的公开知识库，坚决不做知识付费**。我们相信优质内容应当免费共享，而不是被锁进付费课程和付费群。
+
+- 全部内容**与社区共创**，任何人都有机会参与编写和维护
+- 发现错误、过时内容，或想补充新知识点，欢迎直接提 **PR**
+- 项目完全开源，基于 [MIT License](https://github.com/marvin9551/AISeeker/blob/main/LICENSE)
+
+GitHub 仓库：[github.com/marvin9551/AISeeker](https://github.com/marvin9551/AISeeker)
+
+提问题 / 贡献内容：[Issues](https://github.com/marvin9551/AISeeker/issues) · [Pull Requests](https://github.com/marvin9551/AISeeker/pulls)

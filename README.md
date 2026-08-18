@@ -4,6 +4,8 @@
 
 帮助开发者跟上前沿、准备面试，帮助非技术朋友真正用上 AI。
 
+> AISeeker 是免费开放的公开知识库，**坚决不做知识付费**，内容与社区共创，欢迎任何人提交 PR。
+
 ## 为什么做这个项目
 
 AI 信息又多又杂，网上资料「收藏即吃灰」。这个项目想做一件事：把分散的**前沿技术、面试题、学习路线、工具指南**组织成一份可持续维护的公开知识库，让两类人都有收获：
@@ -45,6 +47,7 @@ npm run docs:build
 - 内容贡献格式见 [CONTRIBUTING.md](./CONTRIBUTING.md)
 - 面试题、前沿动态、工具推荐等都在征集范围
 - 提交 PR 前请先阅读贡献指南
+- 在线编辑本站内容：[GitHub 仓库](https://github.com/marvin9551/AISeeker) · [提 Issue](https://github.com/marvin9551/AISeeker/issues) · [提 PR](https://github.com/marvin9551/AISeeker/pulls)
 
 ## 交流与维护
 
